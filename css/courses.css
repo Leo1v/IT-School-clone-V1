@@ -1,6 +1,6 @@
 .welcome {
   background-color: var(--bg-primary);
-  height: 50vh;
+  height: 40vh;
 
   display: flex;
   justify-content: center;
@@ -11,10 +11,17 @@
   text-align: center;
 }
 
+h2 {
+  color: rgb(58, 47, 34);
+}
 @media (max-width: 768px) {
   .welcome h1 {
     font-size: 2rem;
   }
+}
+
+p {
+  color: rgb(156, 119, 71);
 }
 
 .courses .container.grid {
@@ -44,10 +51,12 @@
 .courses .courses-container {
   display: flex;
   flex-wrap: wrap;
+
+  
 }
 
 .courses .course-wrapper {
-  width: calc(100% / 3);
+  width: calc(100% / 4) ;
 
   padding-right: var(--spacing-small);
   padding-left: var(--spacing-small);
@@ -60,6 +69,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: var(--spacing-medium);
+
 }
 
 .courses .presentation-image {
@@ -71,6 +81,7 @@
 
 .courses h3 {
   color: var(--text-primary);
+  text-align: center;
 }
 
 .courses .microsoft-logo {
@@ -83,6 +94,7 @@
 .courses .certification {
   font-size: var(--fs-medium);
   color: #666;
+  text-align: center;
 }
 
 .courses .material-icons {
@@ -96,10 +108,11 @@
   color: var(--text-white);
   background-color: var(--button-color);
 
-  border: 1px solid var(--button-color);
+  border: 2px solid var(--button-color);
   border-radius: 5px;
   padding: var(--spacing-tiny);
 
+  margin: auto;
   width: 100px;
 }
 

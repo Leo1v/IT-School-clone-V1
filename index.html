@@ -4,26 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Adaugam metatag-urile pentru Google -->
     <title>Clonă IT School</title>
     <meta name="description" content="O replică a site-ului itschool.ro" />
 
-    <!-- Includem font-urile prima oara -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- Pentru iconite -->
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- Includem CSS-urile noastre -->
+    
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
   </head>
+
   <body>
     <nav>
       <div class="container">
@@ -31,7 +30,6 @@
           <img src="img/itschool-logo.png" alt="itschool logo" />
         </a>
         <div class="menu-icon-container">
-          <!-- Iconita de meniu + checkbox-ul sunt pentru mobile. -->
           <span class="material-icons menu-icon"> menu </span>
           <input type="checkbox" />
           <ul>
@@ -41,12 +39,10 @@
             <li class="about-us">
               <a href="pages/about.html">
                 Despre Noi
-                <!-- Iconita luata de pe Material Icons. -->
                 <span class="material-icons arrow-down-icon">
                   arrow_drop_down
                 </span>
               </a>
-              <!-- Submeniul afisat la hover pe "Despre noi" -->
               <div class="submenu">
                 <a href="index.html">IT School</a>
                 <a href="pages/about.html">Despre Noi</a>
@@ -72,57 +68,18 @@
           <p>
             Cursuri IT pentru incepatori cu certificare
             <img src="img/microsoft.png" alt="Microsoft" />
-            <img src="img/adobe.png" alt="Adobe" />
             <img src="img/apple.png" alt="Apple" />
             <img src="img/minister.png" alt="Ministerul Educatiei" />
+            <img src="img/adobe.png" alt="Adobe" />
           </p>
           <a href="pages/courses.html">Afla mai multe</a>
         </div>
       </section>
 
       <section class="courses">
-        <!-- Pentru containerele care contin grid-uri folosim si clasa grid.
-            Putem da mai multe clase unui tag de html, acestea se separa prin spatiu. -->
         <div class="container grid">
           <h2>Calendar cursuri</h2>
           <div class="courses-container">
-            <!-- Fiecare curs are aceeasi structura. -->
-            <div class="course-wrapper">
-              <div class="course">
-                <div class="content">
-                  <h3>Python</h3>
-                  <div class="badges">
-                    <span class="date">
-                      <span class="material-icons"> today </span>
-                      <span>In curand</span>
-                    </span>
-                    <span class="place">
-                      <span class="material-icons"> location_on </span>
-                      <span>Online</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="bar"></div>
-              </div>
-            </div>
-            <div class="course-wrapper">
-              <div class="course">
-                <div class="content">
-                  <h3>Web Development</h3>
-                  <div class="badges">
-                    <span class="date">
-                      <span class="material-icons"> today </span>
-                      <span>In curand</span>
-                    </span>
-                    <span class="place">
-                      <span class="material-icons"> location_on </span>
-                      <span>Online</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="bar"></div>
-              </div>
-            </div>
             <div class="course-wrapper">
               <div class="course">
                 <div class="content">
@@ -141,6 +98,45 @@
                 <div class="bar"></div>
               </div>
             </div>
+
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Web Development</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons"> location_on </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Graphic Design</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons"> location_on </span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+
             <div class="course-wrapper">
               <div class="course">
                 <div class="content">
@@ -159,10 +155,11 @@
                 <div class="bar"></div>
               </div>
             </div>
+
             <div class="course-wrapper">
               <div class="course">
                 <div class="content">
-                  <h3>Programare Java</h3>
+                  <h3>Python</h3>
                   <div class="badges">
                     <span class="date">
                       <span class="material-icons"> today </span>
@@ -177,10 +174,11 @@
                 <div class="bar"></div>
               </div>
             </div>
+
             <div class="course-wrapper">
               <div class="course">
                 <div class="content">
-                  <h3>Graphic Design</h3>
+                  <h3>Programare Java</h3>
                   <div class="badges">
                     <span class="date">
                       <span class="material-icons"> today </span>
@@ -214,21 +212,27 @@
             <div class="image-wrapper">
               <img src="img/about-us-1.jpeg" alt="" />
             </div>
-            <div class="image-wrapper">
-              <img src="img/about-us-2.jpeg" alt="" />
-            </div>
-            <div class="image-wrapper">
-              <img src="img/about-us-3.jpeg" alt="" />
-            </div>
-            <div class="image-wrapper">
-              <img src="img/about-us-4.jpeg" alt="" />
-            </div>
+
             <div class="image-wrapper">
               <img src="img/about-us-5.jpeg" alt="" />
             </div>
+
+            <div class="image-wrapper">
+              <img src="img/about-us-4.jpeg" alt="" />
+            </div>
+
+            <div class="image-wrapper">
+              <img src="img/about-us-3.jpeg" alt="" />
+            </div>
+
+            <div class="image-wrapper">
+              <img src="img/about-us-2.jpeg" alt="" />
+            </div>
+            
             <div class="image-wrapper">
               <img src="img/about-us-6.jpeg" alt="" />
             </div>
+
           </div>
         </div>
       </section>
@@ -274,7 +278,7 @@
 
     <footer>
       <div class="container">
-        <p>IT School România © 2021. Toate drepturile rezervate.</p>
+        <p>IT School România © 2022. Toate drepturile rezervate.</p>
       </div>
     </footer>
   </body>

@@ -1,4 +1,3 @@
-/* Adaugam varaibile */
 :root {
     --text-primary: #101d42;
     --text-secondary: #fbb44c;
@@ -26,7 +25,6 @@
     --mobile-logo-height: 45px;
 }
 
-/* Resetam proprietatile default */
 * {
     box-sizing: border-box;
 }
@@ -47,7 +45,6 @@ a {
     text-decoration: none;
 }
 
-/* Resetam stilurile aduagate by default pe mobile */
 input[type="submit"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -55,7 +52,6 @@ input[type="submit"] {
     opacity: 1;
 }
 
-/* Adaugam proprietati legate de font */
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -76,7 +72,6 @@ p {
     font-size: var(--fs-medium);
 }
 
-/* Adaugam proprietati legate de culori */
 h1 {
     color: var(--text-light);
 }
@@ -93,7 +88,6 @@ p {
     color: var(--text-dark);
 }
 
-/* Clase reutilizabile */
 .container {
     max-width: 1200px;
     min-width: 320px;
@@ -103,7 +97,6 @@ p {
     padding: var(--spacing-medium);
 }
 
-/* Layout */
 body {
     display: flex;
     flex-direction: column;
@@ -115,7 +108,6 @@ main {
     flex-grow: 1;
 }
 
-/* Stilizeara nav-ului */
 nav {
     position: fixed;
     top: 0;
@@ -142,7 +134,6 @@ nav img {
     height: 60px;
 }
 
-/* Meniul si checkbox-ul sunt necesare doar pentru versiunea de mobile. */
 nav .menu-icon {
     color: var(--text-light);
     display: none;
@@ -162,7 +153,7 @@ nav li {
 
 nav a {
     font-size: var(--fs-small);
-    /* Transformam textul sa contina doar majuscule.*/
+
     text-transform: uppercase;
 
     color: var(--text-light);
@@ -173,7 +164,6 @@ nav a {
 nav .arrow-down-icon {
     font-size: var(--fs-large);
 
-    /* Daca nu specificam top, left, right sau bottom, elementul va fi pozitionat automat, iar in acest caz il pozitioneaza fix cum trebuie. */
     position: absolute;
 }
 
@@ -182,7 +172,6 @@ nav a:hover {
 }
 
 nav .submenu {
-    /* Initial, submeniul nu este afisat. Afisarea sa se face la hover pe parinte. */
     display: none;
 
     position: absolute;
@@ -201,19 +190,15 @@ nav .submenu a {
     padding: var(--spacing-tiny) var(--spacing-small);
 }
 
-/* Atentie la acest selector! display: block se aplica pe elementul cu clasa submenu, doar atunci cand parintele cu clasa about us are hover! */
 nav .about-us:hover .submenu {
     display: block;
 }
 
-/* Stilizarea pentru mobile */
 @media (max-width: 768px) {
     nav img {
         height: var(--mobile-logo-height);
     }
 
-    /* Ascundem link-urile si afisam iconita de meniu, la pachet cu checkbox-ul.
-    De asemenea, ascundem submeniul (intrucat am avea nevoie de JS ca sa-l facem pe mobil) si iconita ce indica prezenta lui. */
     nav ul {
         display: none;
     }
@@ -234,12 +219,9 @@ nav .about-us:hover .submenu {
         position: relative;
     }
 
-    /* Un nou tip de selector: sleectam input-ul care are ca atribut type="checkbox." */
     nav input[type="checkbox"] {
-        /* Pe mobil checkbox-ul trebuie sa fie prezent pe ecran. */
         display: block;
 
-        /* Practic, punem checkbox-ul deasupra iconitei de meniu. */
         position: absolute;
         top: 0;
         left: 0;
@@ -247,25 +229,19 @@ nav .about-us:hover .submenu {
         height: 100%;
         width: 100%;
 
-        /* Atentie, opacity 0 doar ascunde vizual elementul, ele inca este prezent pe ecran.*/
         opacity: 0;
 
         margin: 0;
 
-        /* Schimbam afisajul cursorului mouse-ului. */
         cursor: pointer;
     }
 
-    /* Doua tipuri noi de selector:
-    1. input:checked => elementul este stilizat doar daca checkbox-ul se afla in starea checked.
-    2. input:checked ~ ul => aplica CSS-ul doar pe FRATII (de acelasi nivel) lui input:checked aflati SUB el ca ordine. Evident, doar fratii care sunt ul. */
     nav input[type="checkbox"]:checked ~ ul {
         display: block;
         width: 100%;
 
-        /* Cand vrem sa ne pozitionam absolut la viewport, folosim position: fixed. Position: absolute s-ar pozitiona fata de primul element relativ, ceea ce nu ne-ar ajuta. */
         position: fixed;
-        /* Unde se afiseaza meniul extins pe mobil? Pai imediat sub nav. Cum calculam cat are nav-ul? Dimensiunea logo-ului + padding. */
+
         top: calc(var(--mobile-logo-height) + 2 * var(--spacing-medium));
         left: 0;
 
@@ -274,7 +250,6 @@ nav .about-us:hover .submenu {
 }
 
 
-/* Footer */
 footer {
     background-color: var(--bg-dark);
 }

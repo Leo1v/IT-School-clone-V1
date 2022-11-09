@@ -1,6 +1,6 @@
 .welcome {
     background-color: var(--bg-primary);
-    height: 50vh;
+    height: 31vh;
 
     display: flex;
     justify-content: center;
@@ -13,18 +13,24 @@
 
 @media (max-width: 768px) {
     .welcome h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
-.contact h2 {
+h2 {
+    color: rgb(156, 119, 71);
+}
+.contact {
     text-align: center;
 
     padding-top: var(--spacing-large);
+    color: rgb(197, 199, 55);
+    
 }
 
 .contact h2, .contact .main-paragraph, .contact .contact-wrapper {
     margin-bottom: var(--spacing-large);
+    color: rgb(156, 119, 71);
 }
 
 .contact .contact-wrapper {
@@ -38,15 +44,19 @@
     flex-direction: column;
 
     padding: var(--spacing-medium);
+
+
+
 }
 
 .contact li {
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: var(--spacing-small);
+    padding-bottom: var(--spacing-medium);
     margin-bottom: var(--spacing-large);
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid rgb(197, 199, 55);
+
 }
 
 .contact .contact-wrapper p,
@@ -54,7 +64,7 @@
 .contact label,
 .contact input,
 .contact textarea {
-    font-size: var(--fs-medium);
+    font-size: var(--fs-large);
 }
 
 .contact .material-icons {
@@ -70,12 +80,9 @@
 }
 
 .contact a, .contact .description, .contact input::placeholder {
-    color: #8e8e8e;
+    color: #361a1a;
 }
 
-.contact a:hover {
-    color: var(--text-primary);
-}
 
 .contact label {
     margin-bottom: var(--spacing-tiny);
@@ -83,8 +90,8 @@
 
 .contact input, .contact textarea {
     padding: var(--spacing-small);
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 2px solid rgb(197, 199, 55);
+    border-radius: 8px;
     margin-bottom: var(--spacing-medium);
 }
 
@@ -99,14 +106,14 @@
 }
 
 .contact input[type="submit"] {
-    font-size: var(--fs-medium);
+    font-size: var(--fs-large);
     text-align: center;
 
     color: var(--text-white);
-    background-color: var(--button-color);
+    background-color: rgb(197, 199, 55);
 
-    border: 1px solid var(--button-color);
-    border-radius: 5px;
+    border: 2px solid ;
+    border-radius: 7px;
     padding: var(--spacing-small);
 
     width: 100px;
@@ -131,6 +138,6 @@
     }
 
     .contact input[type="submit"] {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 }
